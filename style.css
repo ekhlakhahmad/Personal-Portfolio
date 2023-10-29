@@ -82,12 +82,21 @@ header{
 .home-left-side span{
     color: red;
 }
+.social-media{
+    display: flex;
+    
+}
 .social-media a{
-    display: inline-block;
-    padding: 30px 10px;
+    display: flex;
+    padding: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: all 0.3s 0s linear;
+    margin-right: 10px;
 }
 .social-media a:hover{
-    transform: scale(1.05);
+    transform: scale(1.2);
 }
 
 .download-cv {
