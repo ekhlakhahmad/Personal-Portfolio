@@ -55,9 +55,9 @@ header{
     width: 100%;
     height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     background-color: #12123E;
-    padding: 50px 150px;
+    padding: 50px;
 }
 .home-left-side{
     color: white;
@@ -82,21 +82,25 @@ header{
 .home-left-side span{
     color: red;
 }
-.social-media{
-    display: flex;
-    
-}
 .social-media a{
-    display: flex;
-    padding: 5px;
-    width: 50px;
-    height: 50px;
+    text-decoration: none;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #37a1f2;
     border-radius: 50%;
-    transition: all 0.3s 0s linear;
-    margin-right: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    font-size: 20px;
+    color: #37a1f2;
+    margin: 5px 15px 25px 0;
+    transition: 0.5s;
 }
 .social-media a:hover{
-    transform: scale(1.2);
+    background: #37a1f2;
+    color: #f0f3fd;
 }
 
 .download-cv {
@@ -107,8 +111,8 @@ header{
     margin-top: 50px;
     padding:10px 30px;
     transition: all 0.3s;
-    background-color: #181873;
-    
+    background:transparent;
+    border: 1px solid #37a1f2;
 }
 .download-cv a{
     color: white;
@@ -118,10 +122,11 @@ header{
 }
 .download-cv:hover{
     transform: translateY(-5px);
-    background-color: #12123E;
+    background: #090929;
 }
+
 .home-right-side img{
-    width: 350px;
+    max-width: 350px;
     transition: border-radius 0.3s 0s linear;
     border-radius: 50px;
     margin-top:50px;
@@ -138,11 +143,11 @@ header{
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    padding: 50px 50px;
+    padding: 50px;
 }
 #about-section .about-left-side img{
-    width: 400px;
-    height: 500px;
+    max-width: 400px;
+    max-height: 500px;
     border: 3px solid red;
     border-radius: 50%;
     transition: border-radius 0.5s 0s linear;
@@ -153,7 +158,7 @@ header{
     cursor: pointer;
 }
 #about-section .about-right-side{
-    width: 50%;
+    max-width: 50%;
     margin-top:50px;
 }
 .about-right-side h1{
@@ -204,25 +209,19 @@ header{
 
 #skill-section{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     background-color: #12123E;
     display: flex;
-    padding: 0 50px;
+    justify-content: space-evenly;
+    padding: 50px;
 }
 .skill-left-side{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    max-width: 50%;
     margin-top:70px;
-}
-.skill-left-side .container{
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-wrap: wrap;
 }
-.container .skills{
+.skill-left-side .skills{
     padding: 50px;
     display: flex;
     flex-direction: column;
@@ -231,23 +230,22 @@ header{
 .container .skills a{
     text-decoration: none;
 }
-.container .skills img{
+.skill-left-side .skills img{
     width: 50px;
     height: 50px;
     transition: all 0.2s 0s linear;
     cursor: pointer;
 }
-.container .skills img:hover{
+.skill-left-side .skills img:hover{
     transform: scale(1.3);
 }
-.container .skills span{
+.skill-left-side .skills span{
     color: white;
     padding-top: 10px;
     text-align: center;
 }
 .skill-right-side{
-    width: 50%;
-    border: 5px solid green;
+    width: 100%;
     margin-top: 70px;
 }
 
@@ -256,16 +254,16 @@ header{
 #project-section{
     width: 100%;
     height: 100vh;
-    padding: 0 50px;  
+    padding: 50px;  
 }
 #project-section .project-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     flex-wrap: wrap;
 }
 #project-section .project{
-    width: 300px;
-    height: 400px;
+    max-width: 300px;
+    max-height: 400px;
     padding: 10px;
     border: 2px solid black;
     border-radius: 20px;
@@ -326,27 +324,27 @@ header{
 
 #contact-section{
     width: 100%;
-    height: 100vh;
+    /* height: 100vh; */
     display: flex;
     justify-content: space-evenly;
-    padding: 20px 50px;
+    padding: 50px;
 }
 .contact-left-side{
-    width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 .contact-left-side p{
-    width: 500px;
+    max-width: 500px;
     text-align: justify;
     margin-bottom: 20px;
 }
 .contact-left-side h3{
-    padding: 15px;
+    padding: 10px;
 }
 .contact-right-side{
-    width: 50%;
+    /* width: 50%; */
 }
 form{
     display: flex;
@@ -397,7 +395,7 @@ form p a{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: fixed;
+    /* position: fixed; */
     bottom: 0;
 }
 #footer p{
