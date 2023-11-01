@@ -248,6 +248,34 @@ header{
     width: 100%;
     margin-top: 70px;
 }
+.skill-bar {
+    width: 100%;
+    background-color: gray;
+    margin: 50px 10px;
+    border-radius: 20px;
+}
+
+.skill-name {
+    font-weight: bold;
+    color: white;
+}
+
+.bar {
+    height: 25px;
+    background-color: #01017B;
+    width: 0;
+    transition: width 2s;
+    border-radius: 20px;
+    padding: 0 8px;
+}
+
+.percentage {
+    text-align: right;
+    padding-right: 10px;
+    font-weight: bold;
+    float: right;
+    color: white;
+}
 
 /********** PROJECTS PAGE CREATED **********/
 
@@ -342,9 +370,6 @@ header{
 }
 .contact-left-side h3{
     padding: 10px;
-}
-.contact-right-side{
-    /* width: 50%; */
 }
 form{
     display: flex;
