@@ -323,6 +323,7 @@ header{
     padding: 20px;
     color: white;
     text-align: center;
+    text-decoration: underline;
 }
 .resume-container{
     display: flex;
