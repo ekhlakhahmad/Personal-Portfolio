@@ -309,43 +309,71 @@ header{
     text-align: center;
 }
 
-/********** GALLERY PAGE CREATED **********/
+/********** RESUME PAGE CREATED **********/
 
-#gallery-section{
+#resume-section{
     width: 100%;
     height: auto;
-}
-.gallery-container{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    padding-top: 70px;
     background-color: #12123E;
+    padding: 70px 50px;
 }
-.gallery-container img{
+#resume-section .resume{
+    font-size: 32px;
+    font-weight: 800;
+    padding: 20px;
+    color: white;
+    text-align: center;
+}
+.resume-container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.resume-left-side{
+    width: 40%;
+}
+.resume-left-side .education{
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+}
+.education .school{
+    width: 120px;
+    padding: 10px;   
+}
+.education p{
     width: 100%;
-    height: 100%;
-    border-radius: 20px;
-    cursor: pointer;
-    /* margin-top:50px; */
+    padding: 10px;
 }
-.small-size-images{
-    width: 450px;
-    height: 300px;
-    margin: 20px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+.education span{
+    font-weight: 800;
+    color: #05F6BC;
 }
-.gallery-container img:hover{
-    transform: scale(1.05);
-    transition: all 0.5s linear 0s;
+.education .year{
+    float: right;
 }
-.large-size-images{
-    width: 700px;
-    height: 500px;
-    margin: 20px;
-    border-radius: 20px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+
+.resume-right-side{
+    width: 40%;
+} 
+.resume-right-side .certification{
+    font-size: 18px;
+    color: #fff;
+    display: flex;
+}
+.certification .platform{
+    padding: 10px;
+    width: 210px;
+}
+.certification p{
+    width: 100%;
+    padding: 10px;
+}
+.certification span{
+    font-weight: 800;
+    color: #05F6BC;
+}
+.certification .year{
+    float: right;
 }
 
 /********** CONTACT PAGE CREATED **********/
