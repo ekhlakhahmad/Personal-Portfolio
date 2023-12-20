@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
 
+
 *{
     margin: 0;
     padding: 0;
@@ -16,7 +17,7 @@ html,body{
 header{
     width: 100%;
     height: 70px;
-    background-color: #01017b;
+    background-color: #1e3a8a;
     display: flex;
     position: fixed;
     top:0;
@@ -32,7 +33,7 @@ header{
     color: white;
 }
 .header-left-side span{
-    color: red;
+    color: #ff2222;
 }
 .nav>ul{
     display: flex;
@@ -56,11 +57,11 @@ header{
     height: 100vh;
     display: flex;
     justify-content: space-evenly;
-    background-color: #12123E;
+    background-color:  #172554;
     padding: 50px;
 }
 .home-left-side{
-    color: white;
+    color: #fff;
     margin-top:50px;
 }
 .home-left-side h3{
@@ -68,7 +69,7 @@ header{
     padding-bottom: 20px;
 }
 .home-left-side h3 span{
-    color: rgb(64, 246, 64);
+    color: #00ff80;
 }
 .home-left-side h1{
     font-size: 80px;
@@ -80,7 +81,7 @@ header{
     padding-bottom: 20px;
 }
 .home-left-side span{
-    color: red;
+    color: #ff2222;
 }
 .social-media a{
     text-decoration: none;
@@ -126,10 +127,10 @@ header{
 }
 
 .home-right-side img{
-    max-width: 350px;
+    max-width: 400px;
     transition: border-radius 0.3s 0s linear;
-    border-radius: 50px;
-    margin-top:50px;
+    border-radius: 50%;
+    margin-top:100px;
 }
 .home-right-side img:hover{
     border-radius: 0;
@@ -157,11 +158,11 @@ header{
     padding: 0 50px;
 }
 .about-left-side{
-    width: 50%;
+    width: 40%;
 }
 .about-left-side img{
-    max-width: 500px;
-    max-height: 550px;
+    max-width: 400px;
+    max-height: 450px;
     border: 3px solid red;
     border-radius: 50%;
     transition: border-radius 0.5s 0s linear;
@@ -219,7 +220,7 @@ header{
 #skill-section{
     width: 100%;
     /* height: 100vh; */
-    background-color: #12123E;
+    background-color: #172554;
     padding: 50px;
 }
 #skill-section .skill-text{
@@ -282,7 +283,7 @@ header{
 
 .bar {
     height: 25px;
-    background-color: #01017B;
+    background-color: #1e3a8a;
     width: 0;
     transition: width 2s;
     border-radius: 20px;
@@ -301,7 +302,7 @@ header{
 
 #project-section{
     width: 100%;
-    height: 100vh;
+    height: auto;
     padding: 50px;  
 }
 #project-section .project-text{
@@ -318,23 +319,47 @@ header{
     flex-wrap: wrap;
 }
 #project-section .project{
-    max-width: 300px;
-    max-height: 400px;
+    width: 500px;
+    height: 450px;
     padding: 10px;
-    border: 2px solid black;
+    border: 5px solid #1e3a8a;
     border-radius: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
-    margin-top:140px;
+    margin-top:30px;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
 }
 .logo img{
     width: 200px;
     height: 200px;
+    border-radius: 20px;
+    object-fit:fill;
 }
 .project p{
     text-align: center;
+}
+.project-btn a{
+    text-decoration: none;
+}
+.source-live-code{
+    padding: 10px;
+    border-radius: 15px;
+    background-color: #1e3a8a;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 18px;
+    margin: 0 30px;
+    cursor: pointer;
+    position: relative;
+    bottom: -50px;
+}
+
+.source-live-code:hover{
+    background-color: #08205d;
+    color: white;
 }
 
 /********** RESUME PAGE CREATED **********/
@@ -342,7 +367,7 @@ header{
 #resume-section{
     width: 100%;
     height: auto;
-    background-color: #12123E;
+    background-color: #172554;
     padding: 70px 50px;
 }
 #resume-section .resume{
@@ -464,7 +489,7 @@ textarea{
     border: 0.5px solid;
 }
 form .submit-btn{
-    background-color: #008100;
+    background-color: #1e3a8a;
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
@@ -472,7 +497,7 @@ form .submit-btn{
     margin-bottom: 0dvh;
 }
 form .submit-btn:hover{
-    background-color: #014601;
+    background-color: #0c1f54;
     cursor: pointer;
 }
 form p{
@@ -487,7 +512,7 @@ form p a{
 #footer{
     width: 100%;
     height: 60px;
-    background-color: #000024;
+    background-color: #1e3a8a;
     display: flex;
     justify-content: center;
     align-items: center;
