@@ -131,9 +131,6 @@ header{
     transition: border-radius 0.3s 0s linear;
     border-radius: 50%;
     margin-top:100px;
-}
-.home-right-side img:hover{
-    border-radius: 0;
     cursor: pointer;
 }
 
