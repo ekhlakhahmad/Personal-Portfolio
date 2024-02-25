@@ -210,7 +210,7 @@ header{
     width: 100%;
     /* height: 100vh; */
     background-color: #172554;
-    padding: 70px;
+    padding: 70px 20px;
 }
 #skill-section .skill-text{
     font-size: 42px;
@@ -226,10 +226,9 @@ header{
     justify-content: space-evenly;
 }
 .skill-left-side{
-    /* width: 50%; */
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
 }
 .skill-left-side .skills{
     width: 150px;
@@ -261,7 +260,7 @@ header{
 .skill-bar {
     width: 100%;
     background-color: gray;
-    margin: 50px 10px;
+    margin: 0px 10px 50px;
     border-radius: 20px;
 }
 
@@ -292,7 +291,7 @@ header{
 #project-section{
     width: 100%;
     height: auto;
-    padding: 70px;  
+    padding: 70px 20px;  
 }
 #project-section .project-text{
     font-size: 42px;
@@ -304,6 +303,7 @@ header{
 }
 #project-section .project-container{
     display: flex;
+    justify-content: space-evenly;
     gap: 50px;
     flex-wrap: wrap;
     width: 100%;
@@ -495,6 +495,7 @@ form .submit-btn:hover{
 }
 form p{
     text-align: center;
+    font-size: 20px;
 }
 
 /********** FOOTER PAGE CREATED **********/
