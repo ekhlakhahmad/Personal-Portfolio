@@ -54,7 +54,6 @@ header{
 
 #home{
     width: 100%;
-    /* height: calc(100vh - 70px); */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,7 +70,7 @@ header{
     color: #00ff80;
 }
 .home-left-side h1{
-    font-size: 80px;
+    font-size: 64px;
 }
 .home-left-side h2{
     font-size: 40px;
@@ -147,13 +146,15 @@ header{
 }
 .about-left-side{
     width: 40%;
+    position: relative;
+    top: -10px;
 }
 .about-left-side img{
     width: 100%;
     max-width: 400px;
-    max-height: 450px;
+    /* max-height: 450px; */
     border: 3px solid red;
-    border-radius: 50%;
+    border-radius: 10%;
     transition: border-radius 0.5s 0s linear;
 }
 .about-left-side img:hover{
@@ -220,19 +221,22 @@ header{
     text-decoration: underline;
 }
 .skill-container{
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
 }
 .skill-left-side{
-    max-width: 50%;
+    /* width: 50%; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 .skill-left-side .skills{
-    padding: 30px;
+    width: 150px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 20px;
 }
 .container .skills a{
     text-decoration: none;
@@ -302,9 +306,10 @@ header{
     display: flex;
     gap: 50px;
     flex-wrap: wrap;
+    width: 100%;
 }
 #project-section .project{
-    width: 400px;
+    width: 425px;
     height: auto;
     gap: 20px;
     padding: 30px 10px;
@@ -422,7 +427,7 @@ header{
 
 #contact-section{
     width: 100%;
-    padding: 70px;
+    padding: 50px;
 }
 #contact-section .contact{
     text-align: center;
@@ -514,7 +519,8 @@ form p{
 
 
 /* **************** RESPONSIVE DESIGN ****************/
-@media screen and (max-width: 768px) {
+/* @media screen and (max-width: 768px)  */
+@media only screen and (min-width:321px) and (max-width:768px){
     header .nav ul {
       display: none;
     }
@@ -525,11 +531,24 @@ form p{
         align-items: center;
         text-align: center;
         gap: 30px;
+        padding: 120px 10px;
     }
     .home-left-side{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    .home-left-side h1{
+        font-size: 24px;
+    }
+    .home-left-side h2{
+        font-size: 20px;
+    }
+    #about-section{
+        padding: 10px;
+    }
+    #about-section h2{
+        font-size: 24px;
     }
     .about-container{
         display: flex;
@@ -548,16 +567,23 @@ form p{
         align-items: center;
         gap: 10px;
     }
+    #skill-section{
+        padding: 5px;
+    }
     .skill-container{
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
     }
     .skill-left-side{
-        max-width: 100%;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .skill-bar{
+        width: 100%;
+        margin: 50px 0;
     }
     .project-container{
         display: flex;
@@ -569,14 +595,43 @@ form p{
         flex-direction: column;
         align-items: center;
     }
-    .contact-left-side, .contact-right-side{
-        width: 100%;
+    #project-section{
+        padding: 10px;
     }
     .project .project-btn{
+        width: 100%;
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
         gap: 10px;
 
+    }
+    #resume-section{
+        padding: 0;
+    }
+    .resume-container{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .resume-left-side, .resume-right-side{
+        width: 100%;
+    }
+    #contact-section{
+        padding: 0;
+    }
+    .contact-container{
+        width: 100%;
+        padding: 10px;
+    }
+    .contact-left-side, .contact-right-side{
+        width: 100%;
+    }
+    .contact-right-side form{
+        margin: 0;
+    }
+    .contact-right-side p{
+        font-size: 14px;
     }
   }
