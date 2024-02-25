@@ -147,14 +147,13 @@ header{
 .about-left-side{
     width: 40%;
     position: relative;
-    top: -10px;
+    top: -20px;
 }
 .about-left-side img{
     width: 100%;
     max-width: 400px;
-    /* max-height: 450px; */
-    border: 3px solid red;
-    border-radius: 10%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    border-radius: 20px;
     transition: border-radius 0.5s 0s linear;
 }
 .about-left-side img:hover{
