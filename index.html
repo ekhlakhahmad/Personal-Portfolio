@@ -23,7 +23,7 @@
 
 <body>
     <!-- ********* HEADER PAGE CREATED ********* -->
-    <header>
+    <header id="header">
         <div class="header-left-side">
             <a href="#">Port<span>folio</span></a>
         </div>
@@ -32,7 +32,7 @@
             <li><a href="#about-section">About</a></li>
             <li><a href="#skill-section">Skills</a></li>
             <li><a href="#project-section">Projects</a></li>
-            <li><a href="#resume-section">Resume</a></li>
+            <li><a href="#education">Education</a></li>
             <li><a href="#contact-section">Contact</a></li>
         </ul>
         <div class="hamburger-menu" id="hamburger-menu">
@@ -59,14 +59,14 @@
             </div>
         </div>
         <div class="home-right-side">
-            <img src="./images/GITHUB PROFILE.png" alt="photo1">
+            <img src="./images/Profile.png" alt="photo1">
         </div>
     </div>
 
     <!-- ********* ABOUT PAGE CREATED ********* -->
 
     <div id="about-section">
-        <div class="about-text">About</div>
+        <div class="about-text"><i class="fa-solid fa-user-tie"></i> About <span>Me</span></div>
         <div class="about-container">
             <div class="about-left-side">
                 <img src="./images/photo2.jpg" alt="image">
@@ -100,7 +100,7 @@
     <!-- ********* SKILLS PAGE CREATED ******** -->
 
     <div id="skill-section">
-        <div class="skill-text">Skills</div>
+        <div class="skill-text">Skills & <span>Abilities</span></div>
         <div class="skill-container">
             <div class="skill-left-side">
                 <div class="skills">
@@ -159,43 +159,43 @@
 
             <div class="skill-right-side">
                 <div class="skill-bar">
-                    <div class="bar" style="width: 90%;">
+                    <div class="bar" data-width="90">
                         <span class="skill-name">HTML</span>
                         <span class="percentage">90%</span>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="bar" style="width: 80%;">
+                    <div class="bar" data-width="80">
                         <span class="skill-name">CSS</span>
                         <span class="percentage">80%</span>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="bar" style="width: 75%;">
+                    <div class="bar" data-width="75">
                         <span class="skill-name">JavaScript</span>
                         <span class="percentage">75%</span>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="bar" style="width: 70%;">
+                    <div class="bar" data-width="70">
                         <span class="skill-name">React</span>
                         <span class="percentage">70%</span>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="bar" style="width: 75%;">
+                    <div class="bar" data-width="75">
                         <span class="skill-name">C</span>
                         <span class="percentage">75%</span>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="bar" style="width: 80%;">
+                    <div class="bar" data-width="80">
                         <span class="skill-name">C++</span>
                         <span class="percentage">80%</span>
                     </div>
                 </div>
                 <div class="skill-bar">
-                    <div class="bar" style="width: 60%;">
+                    <div class="bar" data-width="60">
                         <span class="skill-name">Python</span>
                         <span class="percentage">60%</span>
                     </div>
@@ -295,59 +295,43 @@
         </div>
     </div>
 
-    <!-- ****** RESUME PAGE CREATED ******** -->
+    <!-- ****** EDUCATION SECTION START ******** -->
 
-    <div id="resume-section">
-        <div class="resume">Resume</div>
-        <div class="resume-container">
-            <div class="resume-left-side">
-                <div class="education">
-                    <div class="school">University</div>
-                    <p><span>Master of Computer Application(MCA)</span><span class="year">Aug '22-Continue...</span><br>
-                        Lovely Professional University | Phagwara(Punjab)<br> CGPA: 7.3</p>
+    <section class="education" id="education">
+    
+        <h1 class="heading"><i class="fas fa-graduation-cap"></i> My <span>Education</span></h1>
+    
+        <p class="qoute">Education is not the learning of facts, but the training of the mind to think.</p>
+    
+        <div class="box-container">
+    
+            <div class="box">
+                <div class="image">
+                    <img draggable="false" src="./images/school.jpg" alt="school">
                 </div>
-                <div class="education">
-                    <div class="school">University</div>
-                    <p><span>Bachelor of Computer Appplication(BCA)</span> <span class="year">Jun '18-21</span><br>
-                        Maulana Mazharul Haque Arabic & Parsian University | Patna(Bihar)<br> Percentage: 69.21 %</p>
-                </div>
-                <div class="education">
-                    <div class="school">College</div>
-                    <p><span>Higher Secondary(12th)</span> <span class="year">Jun '16-18</span><br> CBI Inter College
-                        Tirmapur | Tirmapur | Siwan(Bihar) <br> Percentage: 542.2 %</p>
-                </div>
-                <div class="education">
-                    <div class="school">School</div>
-                    <p><span>Secondary Education(10th)</span> <span class="year">Feb '15-16</span><br> High School
-                        Chainpur | Chainpur | Siwan (Bihar) <br> Percentage: 72.4 %</p>
+                <div class="content">
+                    <h3>Master of Computer Application (MCA)</h3>
+                    <p>Lovely Professional University, Phagwara | Punjab</p>
+                    <h4>2022-2024 | Pursuing...</h4>
                 </div>
             </div>
-
-            <div class="resume-right-side">
-                <div class="certification">
-                    <div class="platform">Cipher Schools</div>
-                    <p><span>C++ Programming Language</span><span class="year">Jun '23</span>
+    
+            <div class="box">
+                <div class="image">
+                    <img draggable="false" src="./images/college.jpg" alt="">
                 </div>
-                <div class="certification">
-                    <div class="platform">Board Infinity</div>
-                    <p><span>JavaScript</span><span class="year">July '23</span>
-                </div>
-                <div class="certification">
-                    <div class="platform">Mind Luster</div>
-                    <p><span>PHP Frontend & Backend</span><span class="year">Aug '23</span>
-                </div>
-                <div class="certification">
-                    <div class="platform">Udemy</div>
-                    <p><span>CSS Crash Course</span><span class="year">Apr '23</span>
-                </div>
-                <div class="certification">
-                    <div class="platform">Cipher Schools</div>
-                    <p><span>HTML Basic</span><span class="year">July '23</span>
+                <div class="content">
+                    <h3>Bachelor of Computer Application (BCA)</h3>
+                    <p>Maulana Mazharul Haque Arabic & parsian University | Patna</p>
+                    <h4>2018-2021 | Completed</h4>
                 </div>
             </div>
+    
         </div>
-    </div>
+    </section>
+    <!-- education section ends -->
 
+    
     <!-- ****** CONTACT PAGE CREATED ******** -->
     <div id="contact-section">
         <div class="contact">Contact</div>
@@ -382,9 +366,16 @@
     <!-- ****** FOOTER PAGE CREATED ******** -->
 
     <div id="footer">
-        <p>&copy; 2023 All rights
+        <p>&copy;
+            <script>document.write(new Date().getFullYear());</script> All rights
             reserved.</p>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+        integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"
+        integrity="sha512-onMTRKJBKz8M1TnqqDuGBlowlH0ohFzMXYRNebz+yOcc5TQr/zAKsthzhuv0hiyUKEiQEQXEynnXCvNTOk50dg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script src="script.js"></script>
 </body>
